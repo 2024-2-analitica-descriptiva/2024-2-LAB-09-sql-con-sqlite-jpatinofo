@@ -33,7 +33,7 @@
 --  en la tabla tbl1.
 --
 --  Rta/
---    K0  MAX(c12)  min(C12)
+--    K0  MAX(c12)  MIN(C12)
 --  0  A    938.16    135.80
 --  1  B    999.72    283.40
 --  2  C    822.81    267.42
@@ -42,3 +42,11 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+select 
+    K0, 
+    max(c12) as 'MAX(c12)', 
+    min(c12) as 'MIN(c12)'
+from 
+    tbl1
+group by 
+    K0
