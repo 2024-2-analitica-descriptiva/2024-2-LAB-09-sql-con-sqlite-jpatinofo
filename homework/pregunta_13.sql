@@ -51,4 +51,4 @@ from
 where 
     c13 > 400
 group by 
-    K0
+    K0 
