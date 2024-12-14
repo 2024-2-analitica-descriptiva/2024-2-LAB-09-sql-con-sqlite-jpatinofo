@@ -45,7 +45,7 @@
 --  
 select 
     K0, 
-    avg(c12) as 'avg(c12)'
+    round(avg(c12) + + 0.001,2) as 'avg(c12)'
 from 
     tbl1
 where 
